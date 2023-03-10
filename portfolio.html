@@ -21,7 +21,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
+        <div class="header-container-desktop">
           <a class="logo link" href="./index.html"
             >Web<span class="studio">Studio</span>
           </a>
@@ -29,15 +29,23 @@
           <nav class="nav">
             <ul class="header-list">
               <li class="list">
-                <a class="link header-link" href="./index.html">Studio</a>
+                <a
+                  class="link header-link header-link-studio current"
+                  href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="list">
-                <a class="link header-link current" href="./portfolio.html"
+                <a
+                  class="link header-link header-link-portfolio"
+                  href="./portfolio.html"
                   >Portfolio</a
                 >
               </li>
               <li class="list">
-                <a class="link header-link" href="">Contacts</a>
+                <a class="link header-link header-link-contacts" href=""
+                  >Contacts</a
+                >
               </li>
             </ul>
           </nav>
@@ -56,6 +64,17 @@
               </li>
             </ul>
           </address>
+        </div>
+
+        <div class="header-container-mobile">
+          <a class="logo link" href="./index.html"
+            >Web<span class="studio">Studio</span>
+          </a>
+          <button class="header-burger" type="button">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -84,7 +103,7 @@
           </ul>
 
           <ul class="section-2-portf-list">
-            <li class="section-2-porft-list-item porft-list-item">
+            <li class="section-2-portf-list-item porft-list-item">
               <a href="" class="link section-2-porft-list-link">
                 <div class="blue-overlay-container">
                   <img
@@ -263,7 +282,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <div class="footer-logo-container">
+          <div class="footer-logo-container footer-item">
             <a class="link logo" href="./index.html"
               >Web<span class="studio">Studio</span></a
             >
@@ -274,40 +293,38 @@
             </p>
           </div>
 
-          <div class="footer-socials">
-            <div class="social">
-              <p class="social-text">Social Media</p>
-              <ul class="icons-list-footer">
-                <li class="icons-item-footer">
-                  <a href="" class="icons-link-footer">
-                    <svg class="social-icon-footer">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icons-item-footer">
-                  <a href="" class="icons-link-footer">
-                    <svg class="social-icon-footer">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icons-item-footer">
-                  <a href="" class="icons-link-footer">
-                    <svg class="social-icon-footer">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icons-item-footer">
-                  <a href="" class="icons-link-footer">
-                    <svg class="social-icon-footer">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div class="footer-socials footer-item">
+            <p class="social-text">Social Media</p>
+            <ul class="icons-list-footer">
+              <li class="icons-item-footer">
+                <a href="" class="icons-link-footer">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-item-footer">
+                <a href="" class="icons-link-footer">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-item-footer">
+                <a href="" class="icons-link-footer">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-item-footer">
+                <a href="" class="icons-link-footer">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <form class="footer-subscribe-container">
