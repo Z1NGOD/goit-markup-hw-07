@@ -27,23 +27,39 @@
   });
 })();
 
+
+
 const contactsLink = document.querySelector('.contacts');
 const mobileMenuAddress = document.querySelector('.mobile-menu-address');
 const iconsListMobileMenu = document.querySelector('.icons-list-mobile-menu');
 let contactsVisible = false;
 
+function hideIcons() {
+  iconsListMobileMenu.style.display = 'none';
+  iconsListMobileMenu.style.cssText = "display:none";
+}
+
 contactsLink.addEventListener('click', function(e) {
   e.preventDefault();
   if (contactsVisible) {
     mobileMenuAddress.style.display = 'none';
-    iconsListMobileMenu.style.display = 'none';
+    hideIcons();
     contactsLink.style.color = 'slate';
   } else {
     mobileMenuAddress.style.display = 'block';
-    iconsListMobileMenu.style.display = 'block';
+    iconsListMobileMenu.style.display = 'flex';
+    iconsListMobileMenu.style.cssText = "justify-content: left; gap: 34px; margin-top: 40px; padding-left: 40px;";
     contactsLink.style.color = 'iris';
   }
   contactsVisible = !contactsVisible;
-});
+}); 
+
+
+
+
+
+
+
+
 
 
