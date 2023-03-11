@@ -70,11 +70,100 @@
           <a class="logo link" href="./index.html"
             >Web<span class="studio">Studio</span>
           </a>
-          <button class="header-burger" type="button">
+          <button class="header-burger js-open-menu" type="button">
             <svg width="32" height="32">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
           </button>
+        </div>
+
+        <div class="mobile-menu js-menu-container">
+          <button class="js-close-menu mobile-menu-button" type="button">
+            <svg>
+              <use href="./images/modal-close.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+
+          <nav class="burger-nav">
+            <ul class="nav-list">
+              <li class="list">
+                <a class="link nav-list-item" href="./index.html">Studio</a>
+              </li>
+              <li class="list">
+                <a
+                  class="link nav-list-item current-mobile-link"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="list">
+                <a
+                  class="link nav-list-item contacts"
+                  href="#"
+                  id="contacts-link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <address
+            class="mobile-menu-address"
+            id="mobile-menu-address"
+            style="display: none"
+          >
+            <ul class="mobile-menu-address-list">
+              <li class="list">
+                <a
+                  class="link mobile-menu-address-mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list">
+                <a class="link mobile-menu-address-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul
+            class="icons-list-mobile-menu"
+            id="icons-list-mobile-menu"
+            style="display: none"
+          >
+            <div class="icons-list-mobile-menu">
+              <li class="icons-item">
+                <a href="" class="icons-link">
+                  <svg class="social-icon-mobile">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-item">
+                <a href="" class="icons-link">
+                  <svg class="social-icon-mobile">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-item">
+                <a href="" class="icons-link">
+                  <svg class="social-icon-mobile">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-item">
+                <a href="" class="icons-link">
+                  <svg class="social-icon-mobile">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
     </header>
@@ -108,6 +197,7 @@
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="./images/banking.jpg 1x, ./images/banking@2.jpg 2x"
                     src="./images/banking.jpg"
                     alt="Banking app interface on phone"
                   />
@@ -128,6 +218,10 @@
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="
+                      ./images/cashless.jpg   1x,
+                      ./images/cashless@2.jpg 2x
+                    "
                     src="./images/cashless.jpg"
                     alt="Cashless payment method on phone"
                   />
@@ -147,6 +241,10 @@
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="
+                      ./images/meditation.jpg   1x,
+                      ./images/meditation@2.jpg 2x
+                    "
                     src="./images/meditation.jpg"
                     alt="App on laptop and phone"
                   />
@@ -166,6 +264,7 @@
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="./images/taxi.jpg 1x, ./images/taxi@2.jpg 2x"
                     src="./images/taxi.jpg"
                     alt="The man sitting in the black car"
                   />
@@ -185,6 +284,7 @@
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="./images/screen.jpg 1x, ./images/screen@2.jpg 2x"
                     src="./images/screen.jpg"
                     alt="The theme app on the phone"
                   />
@@ -198,11 +298,13 @@
                 </div>
               </a>
             </li>
+
             <li class="section-2-portf-list-item">
               <a href="" class="link section-2-porft-list-link">
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="./images/online.jpg 1x, ./images/online@2.jpg 2x"
                     src="./images/online.jpg"
                     alt="The girl in brown sweater looking in her phone"
                   />
@@ -218,11 +320,16 @@
                 </div>
               </a>
             </li>
+
             <li class="section-2-portf-list-item">
               <a href="" class="link section-2-porft-list-link">
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="
+                      ./images/instagram.jpg   1x,
+                      ./images/instagram@2.jpg 2x
+                    "
                     src="./images/instagram.jpg"
                     alt="image with text and models"
                   />
@@ -236,11 +343,13 @@
                 </div>
               </a>
             </li>
+
             <li class="section-2-portf-list-item">
               <a href="" class="link section-2-porft-list-link">
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="./images/organic.jpg 1x, ./images/organic@2.jpg 2x"
                     src="./images/organic.jpg"
                     alt="the girl walking with the bag of vegetables"
                   />
@@ -256,11 +365,13 @@
                 </div>
               </a>
             </li>
+
             <li class="section-2-portf-list-item">
               <a href="" class="link section-2-porft-list-link">
                 <div class="blue-overlay-container">
                   <img
                     width="360"
+                    srcset="./images/fresh.jpg 1x, ./images/fresh@2.jpg 2x"
                     src="./images/fresh.jpg"
                     alt="barista making coffee"
                   />
@@ -326,27 +437,29 @@
               </li>
             </ul>
           </div>
-
-          <form class="footer-subscribe-container">
-            <label class="footer-subcribe footer-subscribe-text">
-              Subscribe
-              <input
-                class="subscribe-input"
-                type="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="subscribe-button" type="submit">
-              Subscribe
-              <svg class="send-svg">
-                <use
-                  href="./images/footer-subscribe-svg.svg#icon-icon-send"
-                ></use>
-              </svg>
-            </button>
-          </form>
+          <div class="form-div">
+            <form class="footer-subscribe-container">
+              <label class="footer-subcribe footer-subscribe-text">
+                Subscribe
+                <input
+                  class="subscribe-input"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <svg class="send-svg">
+                  <use
+                    href="./images/footer-subscribe-svg.svg#icon-icon-send"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
