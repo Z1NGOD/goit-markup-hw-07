@@ -243,9 +243,15 @@ ul {
 
 .hero-title {
     font-size: 36px;
-    width: 318px;
+    width: 100%;
     margin: 0 auto;
     color: var(--color-Main-Background);
+}
+
+@media (min-width:428px) {
+    .hero-title {
+        width: 318px;
+    }
 }
 
 @media (min-width:768px) {
@@ -879,7 +885,7 @@ ul {
 
 @media (min-width:768px) {
     .subscribe-button {
-        transform: translate(40px, 40px);
+        transform: translate(80px, 40px);
     }
 }
 
